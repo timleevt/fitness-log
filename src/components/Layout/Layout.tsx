@@ -2,7 +2,6 @@ import Link from "next/link";
 import Head from "next/head";
 
 import styles from "./Layout.module.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 type Layout = {
   children: any;
@@ -21,12 +20,11 @@ const Layout = ({ children }: Layout) => {
       </Head>
       <nav className={styles.navbar}>
         <Link href="/">
-          {/* <FontAwesomeIcon icon="fa-solid fa-house" /> */}
           Home
         </Link>
         <Link href="/activity">Activity</Link>
         <Link href="/gyms">Gyms</Link>
-        <Link href="/achievements">Achievements</Link>
+        <Link href="/achievements">Achieve<span>ment</span>s</Link>
       </nav>
       {children}
     </div>

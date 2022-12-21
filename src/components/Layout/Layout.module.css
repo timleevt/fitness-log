@@ -5,6 +5,21 @@
   padding: 40px 0px;
 }
 
+.navbar > a:nth-child(2):hover {
+  color: hsl(258, 73%, 68%);
+}
+
+.navbar > a:nth-child(3):hover {
+  color: hsl(19, 19%, 48%);
+}
+
+.navbar > a:nth-child(4):hover {
+  color: rgba(202, 202, 202, 0.171);
+}
+.navbar > a:nth-child(4):hover > span {
+  color: hsla(0, 70%, 52%, 0.61);
+}
+
 .footer {
   position: absolute;
   bottom: 0;
