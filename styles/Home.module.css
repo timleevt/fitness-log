@@ -19,14 +19,13 @@
 }
 
 .imgContainer {
-  width: 100%;
   display: flex;
   justify-content: center;
   gap: 10px;
+  position: relative;
 }
 
 .bgImgCard {
-  background-image: url("https://upload.wikimedia.org/wikipedia/commons/2/22/GABRIEL_VELLA_vs_ROMINHO_51.jpg");
   background-size: cover;
   opacity: 0.6;
   width: 175px;
@@ -46,8 +45,17 @@
 .bgImgCard:hover {
   opacity: 0.8;
   z-index: 3;
-  top:-10px;
+  top: -10px;
   box-shadow: 0 0 15px white;
+}
+
+.bgImgCard:nth-child(1) {
+  background-image: url("../public/images/comp2.jpeg");
+  background-position-x: center;
+}
+.bgImgCard:nth-child(2) {
+  background-image: url("../public/images/abmars.png");
+  background-position-x: right;
 }
 
 .bgImgCard:nth-child(3) {
@@ -55,11 +63,39 @@
   background-position-x: center;
 }
 
+.bgImgCard:nth-child(4) {
+  background-image: url("../public/images/comp.jpeg");
+  background-position-x: 35%;
+}
+
 .hoverTxt {
   position: absolute;
-  top: 20%;
+  top: 40%;
   text-align: center;
   color: white;
   font-size: 24px;
   z-index: 5;
+}
+
+@media (max-width: 500px) {
+  .imgContainer {
+    flex-direction: column;
+    align-items: center;
+  }
+  .bgImgCard {
+    width: 80%;
+    height: 100px;
+  }
+  .bgImgCard:nth-child(1) {
+    background-position-y: 20%;
+  }
+  .bgImgCard:nth-child(2) {
+    background-position-y: center;
+  }
+  .bgImgCard:nth-child(3) {
+    background-position-y: center;
+  }
+  .bgImgCard:nth-child(4) {
+    background-position-y: center;
+  }
 }
