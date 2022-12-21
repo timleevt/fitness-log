@@ -1,13 +1,19 @@
-import classNames from "classnames";
 import { COMP_RECORD } from "../../../src/constants/dummydata";
+import SubTypeDoughnutChart from "../Charts/SubTypeDoughtnutChart";
+import WinLossBarChart from "../Charts/WinLossBarChart";
 import styles from "./CompRecord.module.css";
 
 const CompRecord = () => {
   const winColor = { color: "hsla(120, 60%, 67%, 0.705)" };
   const lossColor = { color: "hsla(3, 100%, 69%, 0.74)" };
+
   return (
     <div className={styles.container}>
       <h2>Competition Record</h2>
+      <div className={styles.chartContainer}>
+        <WinLossBarChart />
+        <SubTypeDoughnutChart />
+      </div>
       <table>
         <tbody>
           <tr>
@@ -36,7 +42,7 @@ const CompRecord = () => {
                 <td>{division}</td>
                 <td>{weightClass}</td>
                 <td>{weight}</td>
-                <td style={result === 'W' ? winColor : lossColor}>{result}</td>
+                <td style={result === "W" ? winColor : lossColor}>{result}</td>
                 <td>{method}</td>
               </tr>
             )

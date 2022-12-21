@@ -15,8 +15,6 @@ const GymsContainer = () => {
   );
   const [showMain, setShowMain] = useState(true);
 
-  console.log(main);
-
   return (
     <div className={styles.container}>
       <div className={styles.tab}>

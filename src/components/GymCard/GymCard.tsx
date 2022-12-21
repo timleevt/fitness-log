@@ -9,7 +9,6 @@ type GymCard = {
 };
 
 const GymCard = ({ name, notes, loc, website }: GymCard) => {
-  console.log(website);
   return (
     <div className={styles.container}>
         <div className={styles.gymImg}></div>

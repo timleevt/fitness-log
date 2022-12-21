@@ -16,3 +16,13 @@
     text-overflow: ellipsis;
     padding-right: 6px;
 }
+
+.chartContainer {
+    display:  flex;
+    max-height: 250px;
+    width: 80%;
+    justify-content:space-between;
+    gap: 25px;
+    margin: auto;
+    margin-bottom: 50px;
+}
