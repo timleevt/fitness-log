@@ -1,0 +1,26 @@
+.container {
+  display: flex;
+  gap: 20px;
+  max-height: 100px;
+  height: 100px;
+}
+
+.gymImg {
+    background-image: url("https://lh3.googleusercontent.com/p/AF1QipNCWmAmq0X21TYZArUKhKEVlZXWP-NwBSRlkARQ=s680-w680-h510");
+    background-size: cover;
+    width: 150px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.text > a {
+    font-weight: bold;
+}
+
+.location {
+  text-align: right;
+  margin-left: auto;
+}
