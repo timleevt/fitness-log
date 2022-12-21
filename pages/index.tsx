@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer} onMouseLeave={() => setText("")}>
+      <div className={styles.imgContainer} onMouseLeave={() => setText("")}>      
         <div
           className={styles.bgImgCard}
           onMouseEnter={() => handleMouseEnter(1)}
@@ -37,9 +37,6 @@ export default function Home() {
         <div className={styles.hoverTxt}>{text}</div>
       </div>
       <p>personal training log / activity tracker</p>
-      <a href="https://timleevt.github.io" target="_blank" rel="noreferrer">
-        timleevt.github.io
-      </a>
     </div>
   );
 }

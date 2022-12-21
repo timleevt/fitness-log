@@ -1,4 +1,5 @@
 .container {
+  height: 80vh;
   width: 80%;
   margin: auto;
   display: block;
@@ -7,11 +8,8 @@
 
 .container > p {
   color: hsl(240, 1%, 31%);
-}
-
-.container > a {
-  text-align: center;
-  color: hsl(205, 27%, 57%);
+  margin-top: 20px;
+  margin-bottom: 0px;
 }
 
 .container > a:hover {

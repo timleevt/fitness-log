@@ -1,5 +1,12 @@
 import Link from "next/link";
 import Head from "next/head";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faHouse,
+  faChartLine,
+  faDumbbell,
+  faMedal,
+} from "@fortawesome/free-solid-svg-icons";
 
 import styles from "./Layout.module.css";
 
@@ -20,13 +27,27 @@ const Layout = ({ children }: Layout) => {
       </Head>
       <nav className={styles.navbar}>
         <Link href="/">
-          Home
+          <FontAwesomeIcon icon={faHouse} />
         </Link>
-        <Link href="/activity">Activity</Link>
-        <Link href="/gyms">Gyms</Link>
-        <Link href="/achievements">Achieve<span>ment</span>s</Link>
+        <Link href="/activity">
+          <FontAwesomeIcon icon={faChartLine} />
+        </Link>
+        <Link href="/gyms">
+          <FontAwesomeIcon icon={faDumbbell} />
+        </Link>
+        <Link href="/achievements">
+          <FontAwesomeIcon icon={faMedal} />
+        </Link>
       </nav>
       {children}
+      <a
+        className={styles.footer}
+        href="https://timleevt.github.io"
+        target="_blank"
+        rel="noreferrer"
+      >
+        timleevt.github.io
+      </a>
     </div>
   );
 };

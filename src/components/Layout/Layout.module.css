@@ -1,8 +1,19 @@
 .navbar {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  padding: 40px 0px;
+  gap: 36px;
+  padding: 40px 0px 20px 0px;
+}
+
+.navbar > a {
+  width: 26px;
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+
+.navbar > a:hover {
+  top: -3px;
 }
 
 .navbar > a:nth-child(2):hover {
@@ -16,14 +27,15 @@
 .navbar > a:nth-child(4):hover {
   color: rgba(202, 202, 202, 0.171);
 }
-.navbar > a:nth-child(4):hover > span {
-  color: hsla(0, 70%, 52%, 0.61);
-}
 
 .footer {
-  position: absolute;
-  bottom: 0;
+  background-color: #1a1a1d;
+  padding-top: 10px;
+  padding-bottom: 20px;
   width: 100%;
+  z-index: 2;
+  position: fixed;
   text-align: center;
-  height: 2.5rem;
+  bottom: 0%;
+  color: hsl(205, 27%, 57%);
 }
