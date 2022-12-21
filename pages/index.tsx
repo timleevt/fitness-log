@@ -17,7 +17,7 @@ export default function Home() {
 
   return (
     <div className={styles.container}>
-      <div className={styles.imgContainer} onMouseLeave={() => setText("")}>      
+      <div className={styles.imgContainer} onMouseLeave={() => setText("")}>
         <div
           className={styles.bgImgCard}
           onMouseEnter={() => handleMouseEnter(1)}

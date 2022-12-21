@@ -1,0 +1,18 @@
+.container {
+    width: 80%;
+    display: block;
+    margin: auto;
+}
+
+.container > table {
+    text-align: left;
+}
+
+.container > table > tbody > tr > td {
+    max-width: 200px;
+    width: 200px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 6px;
+}
