@@ -27,7 +27,7 @@ const AcitivtyCard = ({ activityType, date, duration, notes }: Props) => {
         <div>{date}</div>
       </div>
       {duration && <div>{duration}HR(s)</div>}
-      <div>{notes}</div>
+      <div className={styles.notes}>{notes}</div>
     </div>
   );
 };

@@ -3,8 +3,8 @@ import { COMP_RECORD } from "../../../src/constants/dummydata";
 import styles from "./CompRecord.module.css";
 
 const CompRecord = () => {
-  const winColor = { color: "green" };
-  const lossColor = { color: "red" };
+  const winColor = { color: "hsla(120, 60%, 67%, 0.705)" };
+  const lossColor = { color: "hsla(3, 100%, 69%, 0.74)" };
   return (
     <div className={styles.container}>
       <h2>Competition Record</h2>
