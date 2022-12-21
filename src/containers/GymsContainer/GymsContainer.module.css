@@ -2,7 +2,21 @@
   width: 80%;
   margin: auto;
   max-width: 1000px;
+
+  /* Need to fix this height part */
+  height: 80vh;
+  overflow-y: scroll;
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
 }
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.container::-webkit-scrollbar {
+  display: none;
+}
+
 
 .tab {
   display: flex;

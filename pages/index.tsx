@@ -3,21 +3,21 @@ import styles from "../styles/Home.module.css";
 
 export default function Home() {
   const [show, setShow] = useState(false);
-  const [text, setText] = useState("dicks");
+  const [text, setText] = useState("");
   const handleMouseEnter = (position: number) => {
-    console.log("this triggers?");
     if (position === 1) {
-      setText("favorite technique/position: open guard / berimbolo");
+      setText("Tim Lee / Age 29");
     } else if (position === 2) {
       setText("current rank: blue belt");
     } else if (position === 3) {
       setText("current team: carpe diem");
     } else if (position === 4) {
-      setText("idk poo poo");
+      setText("favorite technique/position: open guard / berimbolo");
     }
     setShow(true);
   };
 
+  // Currently bugged. If you mouse over the text it will call this repeatedly
   const handleMouseLeave = () => {
     setShow(false);
   };
