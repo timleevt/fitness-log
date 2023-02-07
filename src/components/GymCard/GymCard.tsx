@@ -11,7 +11,6 @@ type GymCard = {
 const GymCard = ({ name, notes, loc, website }: GymCard) => {
   return (
     <div className={styles.container}>
-        <div className={styles.gymImg}></div>
         <div className={styles.text}>
             <a href={website}>{name}</a>
             <div>{notes}</div>

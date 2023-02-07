@@ -1,6 +1,6 @@
 import { COMP_RECORD } from "../../../src/constants/dummydata";
-import SubTypeDoughnutChart from "../Charts/SubTypeDoughtnutChart";
-import WinLossBarChart from "../Charts/WinLossBarChart";
+// import SubTypeDoughnutChart from "../Charts/SubTypeDoughtnutChart";
+// import WinLossBarChart from "../Charts/WinLossBarChart";
 import styles from "./CompRecord.module.css";
 
 const CompRecord = () => {
@@ -10,10 +10,10 @@ const CompRecord = () => {
   return (
     <div className={styles.container}>
       <h2>Competition Record</h2>
-      <div className={styles.chartContainer}>
+      {/* <div className={styles.chartContainer}>
         <WinLossBarChart />
         <SubTypeDoughnutChart />
-      </div>
+      </div> */}
       <table>
         <tbody>
           <tr>

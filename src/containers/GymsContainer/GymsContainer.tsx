@@ -18,13 +18,34 @@ const GymsContainer = () => {
   return (
     <div className={styles.container}>
       <div className={styles.tab}>
-        <a className={classNames({[styles.active]: showMain === true})} onClick={() => setShowMain(true)}>Main</a>
-        <a className={classNames({[styles.active]: showMain === false})} onClick={() => setShowMain(false)}>Visited</a>
+        <a
+          className={classNames({ [styles.active]: showMain === true })}
+          onClick={() => setShowMain(true)}
+        >
+          Main
+        </a>
+        <a
+          className={classNames({ [styles.active]: showMain === false })}
+          onClick={() => setShowMain(false)}
+        >
+          Visited
+        </a>
       </div>
-      {showMain ? (
-        <>
-          <ul style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            {main.map((item) => (
+
+      <ul className={styles.gymListContainer}>
+        {showMain
+          ? main.map((item) => (
+              <li key={item.id} style={{ listStyle: "none" }}>
+                <GymCard
+                  name={item.name}
+                  notes={item.notes}
+                  loc={item.loc}
+                  type={item.type}
+                  website={item.website}
+                />
+              </li>
+            ))
+          : visited.map((item) => (
               <li key={item.id} style={{ listStyle: "none" }}>
                 <GymCard
                   name={item.name}
@@ -35,25 +56,7 @@ const GymsContainer = () => {
                 />
               </li>
             ))}
-          </ul>
-        </>
-      ) : (
-        <>
-          <ul style={{ display: "flex", flexDirection: "column", gap: "12px" }}>
-            {visited.map((item) => (
-              <li key={item.id} style={{ listStyle: "none" }}>
-                <GymCard
-                  name={item.name}
-                  notes={item.notes}
-                  loc={item.loc}
-                  type={item.type}
-                  website={item.website}
-                />
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
+      </ul>
       {/* <p>maybe put a map with pins here</p> */}
       <p>
         being on this list is not an endorsement, it is purely a list of gyms I

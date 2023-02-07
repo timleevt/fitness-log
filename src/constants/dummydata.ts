@@ -243,7 +243,7 @@ export const DUMMY_ACTIVITY = [
   },
   {
     id: 35,
-    activity: "No GI",
+    activity: "No Gi",
     date: "1/25/2022",
     duration: 1,
     notes: "Wrestling 2 on 1 to single.",
@@ -254,6 +254,54 @@ export const DUMMY_ACTIVITY = [
     date: "1/25/2022",
     duration: 1,
     notes: "Spider-lasso scissor sweep to SLX. SLX to BA footlock",
+  },{
+    id: 37,
+    activity: "No Gi",
+    date: "1/26/2022",
+    duration: 1,
+    notes: "50/50 heel hook/toehold",
+  },
+  {
+    id: 38,
+    activity: "Gi BJJ",
+    date: "1/26/2022",
+    duration: 1,
+    notes: "Pant grip DLR to X-guard technical standup sweep",
+  },
+  {
+    id: 39,
+    activity: "Weights",
+    date: "1/30/2022",
+    duration: 1,
+    notes: "Week 3 Bench [2] / DL. Injured while doing DL. Might have had bad form.",
+  },
+  {
+    id: 40,
+    activity: "Gi BJJ",
+    date: "1/31/2022",
+    duration: 1,
+    notes: "Pendulum sweep",
+  },
+  {
+    id: 41,
+    activity: "No Gi",
+    date: "1/31/2022",
+    duration: 1,
+    notes: "Pendulum sweep",
+  },  
+  {
+    id: 42,
+    activity: "No Gi",
+    date: "2/2/2022",
+    duration: 1,
+    notes: "Underhook DLR to waiter",
+  },
+  {
+    id: 41,
+    activity: "Gi BJJ",
+    date: "2/6/2022",
+    duration: 2,
+    notes: "Basic class: Passing underhook DLR. Adv class: Berimbolo counter using the stepover bellydown ankle lock",
   },
 ];
 

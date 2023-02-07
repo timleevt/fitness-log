@@ -17,18 +17,24 @@
   display: none;
 }
 
+.gymListContainer {
+  display: flex;
+  flex-direction: column;
+}
 
 .tab {
   display: flex;
   gap: 6px;
+  /* color: white; */
 }
 
 .tab > a {
   font-size: 24px;
   color: rgba(0, 0, 0, 0.7);
+  color: white;
 }
 
 .active {
   font-weight: 700;
-  color: rgba(0, 0, 0, 1) !important;
+  color: white;
 }
