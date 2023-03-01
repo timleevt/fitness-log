@@ -9,14 +9,17 @@ import styles from "./GymsContainer.module.css";
 const GymsContainer = () => {
   const [showMain, setShowMain] = useState(true);
 
-  const { data: gyms } = useFetchGyms();
+  // const { data: gyms } = useFetchGyms();
 
-  let main = gyms?.data.filter(
-    (item) => item.type === "main" || item.type === "secondary"
-  );
-  let visited = gyms?.data.filter(
-    (item) => item.type !== "main" && item.type !== "secondary"
-  );
+  // let main = gyms?.data.filter(
+  //   (item) => item.type === "main" || item.type === "secondary"
+  // );
+  // let visited = gyms?.data.filter(
+  //   (item) => item.type !== "main" && item.type !== "secondary"
+  // );
+
+  let main = null;
+  let visited = null;
 
   // Can delete once I get real backend working
   let static_sorted = GYM_DATA.sort((a, b) => b.id - a.id);
@@ -46,7 +49,7 @@ const GymsContainer = () => {
       </div>
 
       <ul className={styles.gymListContainer}>
-        {showMain
+        {/* {showMain
           ? main?.map((item) => (
               <li key={item.id} style={{ listStyle: "none" }}>
                 <GymCard
@@ -68,7 +71,7 @@ const GymsContainer = () => {
                   website={item.website}
                 />
               </li>
-            ))}
+            ))} */}
 
         {/* Temporary just for static site */}
         {showMain &&
@@ -84,7 +87,7 @@ const GymsContainer = () => {
               />
             </li>
           ))}
-        {!visited &&
+        {(!showMain && !visited) &&
           static_visited?.map((item) => (
             <li key={item.id} style={{ listStyle: "none" }}>
               <GymCard
