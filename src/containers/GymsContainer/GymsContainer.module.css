@@ -34,6 +34,10 @@
   color: white;
 }
 
+.tab > a:hover {
+  color: #A2D2FF;
+}
+
 .active {
   font-weight: 700;
   color: white;
